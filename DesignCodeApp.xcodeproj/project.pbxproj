@@ -14,6 +14,8 @@
 		497BF51320A22EC300335616 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497BF51220A22EC300335616 /* Assets.xcassets */; };
 		497BF51620A22EC300335616 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497BF51420A22EC300335616 /* LaunchScreen.storyboard */; };
 		497BF51E20A399EA00335616 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF51D20A399EA00335616 /* SectionViewController.swift */; };
+		497BF52020A3ABA400335616 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF51F20A3ABA400335616 /* Data.swift */; };
+		497BF52220A3AC4100335616 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		497BF51520A22EC300335616 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		497BF51720A22EC300335616 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		497BF51D20A399EA00335616 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
+		497BF51F20A3ABA400335616 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				497BF51420A22EC300335616 /* LaunchScreen.storyboard */,
 				497BF51720A22EC300335616 /* Info.plist */,
 				497BF50F20A22EC300335616 /* DesignCodeApp.xcdatamodeld */,
+				497BF51F20A3ABA400335616 /* Data.swift */,
+				497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */,
 			);
 			path = DesignCodeApp;
 			sourceTree = "<group>";
@@ -143,8 +149,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				497BF50B20A22EC300335616 /* ViewController.swift in Sources */,
+				497BF52020A3ABA400335616 /* Data.swift in Sources */,
 				497BF50920A22EC300335616 /* AppDelegate.swift in Sources */,
 				497BF51E20A399EA00335616 /* SectionViewController.swift in Sources */,
+				497BF52220A3AC4100335616 /* SectionCollectionViewCell.swift in Sources */,
 				497BF51120A22EC300335616 /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

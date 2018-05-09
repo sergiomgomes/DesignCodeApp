@@ -39,10 +39,14 @@ class ViewController: UIViewController {
         }
     }
     
+    @IBOutlet var chapterCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.delegate = self
+        chapterCollectionView.delegate = self
+        chapterCollectionView.dataSource = self
         
         titleLabel.alpha = 0
         playVisualEfectView.alpha = 0
@@ -70,5 +74,25 @@ extension ViewController : UIScrollViewDelegate{
             
         }
     }
+}
+
+extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return sections.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "sectionCell", for: indexPath) as! SectionCollectionViewCell
+        
+        let section = sections[indexPath.row]
+        cell.captionLabel.text = section["caption"]
+        cell.titleLabel.text = section["title"]
+        cell.coverImageView.image = UIImage(named : section["image"]!)
+        
+        return cell
+    }
+    
+    
+    
 }
 
