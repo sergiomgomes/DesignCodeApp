@@ -16,6 +16,8 @@
 		497BF51E20A399EA00335616 /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF51D20A399EA00335616 /* SectionViewController.swift */; };
 		497BF52020A3ABA400335616 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF51F20A3ABA400335616 /* Data.swift */; };
 		497BF52220A3AC4100335616 /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */; };
+		497BF52420A4FAA900335616 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF52320A4FAA900335616 /* TestimonialViewController.swift */; };
+		497BF52620A4FAD100335616 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF52520A4FAD100335616 /* TestimonialCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		497BF51D20A399EA00335616 /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		497BF51F20A3ABA400335616 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		497BF52320A4FAA900335616 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		497BF52520A4FAD100335616 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				497BF50820A22EC300335616 /* AppDelegate.swift */,
 				497BF50A20A22EC300335616 /* ViewController.swift */,
 				497BF51D20A399EA00335616 /* SectionViewController.swift */,
+				497BF52320A4FAA900335616 /* TestimonialViewController.swift */,
+				497BF52520A4FAD100335616 /* TestimonialCollectionViewCell.swift */,
 				497BF50C20A22EC300335616 /* Main.storyboard */,
 				497BF51220A22EC300335616 /* Assets.xcassets */,
 				497BF51420A22EC300335616 /* LaunchScreen.storyboard */,
@@ -152,7 +158,9 @@
 				497BF52020A3ABA400335616 /* Data.swift in Sources */,
 				497BF50920A22EC300335616 /* AppDelegate.swift in Sources */,
 				497BF51E20A399EA00335616 /* SectionViewController.swift in Sources */,
+				497BF52420A4FAA900335616 /* TestimonialViewController.swift in Sources */,
 				497BF52220A3AC4100335616 /* SectionCollectionViewCell.swift in Sources */,
+				497BF52620A4FAD100335616 /* TestimonialCollectionViewCell.swift in Sources */,
 				497BF51120A22EC300335616 /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
