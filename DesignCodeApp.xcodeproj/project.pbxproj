@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		496C538520B4C12900FFA1DA /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C538420B4C12900FFA1DA /* ChaptersViewController.swift */; };
+		496C538720B4C65100FFA1DA /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C538620B4C65100FFA1DA /* BookmarksTableViewController.swift */; };
+		496C538920B4CBB400FFA1DA /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496C538820B4CBB400FFA1DA /* BookmarkTableViewCell.swift */; };
 		497BF50920A22EC300335616 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF50820A22EC300335616 /* AppDelegate.swift */; };
 		497BF50B20A22EC300335616 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497BF50A20A22EC300335616 /* HomeViewController.swift */; };
 		497BF50E20A22EC300335616 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497BF50C20A22EC300335616 /* Main.storyboard */; };
@@ -23,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		496C538420B4C12900FFA1DA /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		496C538620B4C65100FFA1DA /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		496C538820B4CBB400FFA1DA /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 		497BF50520A22EC300335616 /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497BF50820A22EC300335616 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497BF50A20A22EC300335616 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				497BF51F20A3ABA400335616 /* Data.swift */,
 				497BF52120A3AC4100335616 /* SectionCollectionViewCell.swift */,
 				496C538420B4C12900FFA1DA /* ChaptersViewController.swift */,
+				496C538620B4C65100FFA1DA /* BookmarksTableViewController.swift */,
+				496C538820B4CBB400FFA1DA /* BookmarkTableViewCell.swift */,
 			);
 			path = DesignCodeApp;
 			sourceTree = "<group>";
@@ -158,8 +164,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				497BF50B20A22EC300335616 /* HomeViewController.swift in Sources */,
+				496C538720B4C65100FFA1DA /* BookmarksTableViewController.swift in Sources */,
 				497BF52020A3ABA400335616 /* Data.swift in Sources */,
 				497BF50920A22EC300335616 /* AppDelegate.swift in Sources */,
+				496C538920B4CBB400FFA1DA /* BookmarkTableViewCell.swift in Sources */,
 				497BF51E20A399EA00335616 /* SectionViewController.swift in Sources */,
 				497BF52420A4FAA900335616 /* TestimonialViewController.swift in Sources */,
 				497BF52220A3AC4100335616 /* SectionCollectionViewCell.swift in Sources */,
