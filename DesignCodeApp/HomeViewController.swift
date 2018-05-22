@@ -9,7 +9,7 @@
 import UIKit
 import AVKit
 
-class ViewController: UIViewController {
+class HomeViewController: UIViewController {
 
     @IBOutlet var titleLabel: UILabel!
     
@@ -46,6 +46,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
         scrollView.delegate = self
         chapterCollectionView.delegate = self
         chapterCollectionView.dataSource = self
@@ -60,9 +62,11 @@ class ViewController: UIViewController {
             self.deviceImageView.alpha = 1
         }
         
+        /* SET Top bar
+         
         addBlurStatusBar()
         
-        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))
+        setStatusBarBackgroundColor(color: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5))*/
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -71,6 +75,12 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.5) {
             self.setNeedsStatusBarAppearanceUpdate()
         }
+        
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.navigationBar.isOpaque = false
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 50)
+        ]
     }
     
     override var prefersStatusBarHidden: Bool {
@@ -121,10 +131,13 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController : UIScrollViewDelegate{
+extension HomeViewController : UIScrollViewDelegate{
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offsetY = scrollView.contentOffset.y
+        
+        let navigationIsHidden = offsetY <= 0
+        navigationController?.setNavigationBarHidden(navigationIsHidden, animated: true)
         
         if offsetY < 0 {
             heroView.transform = CGAffineTransform(translationX: 0, y: offsetY)
@@ -179,7 +192,7 @@ extension ViewController : UIScrollViewDelegate{
     }
 }
 
-extension ViewController : UICollectionViewDelegate, UICollectionViewDataSource {
+extension HomeViewController : UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return sections.count
     }
