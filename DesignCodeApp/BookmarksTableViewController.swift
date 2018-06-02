@@ -47,5 +47,22 @@ class BookmarksTableViewController: UITableViewController {
 
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "bookmarksToSection", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "bookmarksToSection", let destination = segue.destination as? SectionViewController{
+            destination.section = sections[0]
+            destination.sections = sections
+            destination.indexPath = sender as! IndexPath
+        }
+    }
+}
 
+extension UIViewController {
+    @IBAction public func unwindToViewController(_ segue: UIStoryboardSegue){
+        dismiss(animated: true, completion: nil)
+    }
 }
